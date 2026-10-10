@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WTech Spark - WomenTech UCatólica</title>
+<!-- Google Fonts: Inter / Montserrat style -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script data-purpose="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            'brand-navy': '#060f38',
+            'brand-deep-blue': '#0a1d63',
+            'brand-blue': '#1b3cb3',
+            'brand-pink': '#f72585',
+            'brand-pink-hover': '#e01673',
+            'brand-lavender': '#eceafc',
+            'brand-purple-icon': '#5e43d8',
+          }
+        }
+      }
+    }
+  </script>
+<style data-purpose="custom-styling">
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    /* Clip path and curves for hero aesthetic */
+    .hero-bg {
+      background: linear-gradient(108deg, #0f2791 0%, #1c3ebc 48%, #4f3eb5 75%, #a58ae8 100%);
+    }
+    .hero-curve {
+      border-radius: 200px 0 0 200px;
+    }
+  </style>
+</head>
+<body class="bg-[#fcfcff] text-[#1e1b4b] antialiased flex flex-col min-h-screen">
+<!-- BEGIN: MainHeader -->
+<header class="bg-[#081033] text-white sticky top-0 z-50 shadow-md">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a class="flex flex-col tracking-tight group" data-purpose="header-brand" href="#">
+<div class="text-xl sm:text-2xl font-black tracking-wider leading-none flex items-center gap-1.5">
+<span class="text-white">WOMEN</span>
+<span class="text-[#f72585]">TECH</span>
+</div>
+<span class="text-[10px] tracking-[0.22em] text-gray-300 font-semibold uppercase mt-0.5">UCATÓLICA</span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-7 text-sm font-medium" data-purpose="navigation-menu">
+<a class="text-gray-300 hover:text-white transition-colors" href="#">Inicio</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#">Quiénes somos</a>
+<!-- Active Link -->
+<a class="text-white relative py-2 font-semibold flex flex-col items-center" href="#">
+<span>Rutas de formación</span>
+<span class="absolute bottom-0 w-full h-[2.5px] bg-[#f72585] rounded-full"></span>
+</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#">Actividades</a>
+<a class="text-gray-300 hover:text-white transition-colors" href="#">Aliados</a>
+</nav>
+<!-- Inscríbete Header Button -->
+<div class="flex items-center">
+<a class="bg-[#f72585] hover:bg-[#e01673] text-white text-sm font-semibold px-6 py-2.5 rounded-full transition-all duration-200 shadow-sm hover:shadow-md hover:scale-[1.02]" href="#inscribirme">
+          Inscríbete
+        </a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: BackNavigation -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5 pb-3 w-full">
+<a class="inline-flex items-center gap-2.5 text-[#1a2f7d] hover:text-[#f72585] font-semibold text-sm transition-colors group" href="#">
+<svg class="w-4 h-4 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+</svg>
+<span>Volver a todas las rutas</span>
+</a>
+</section>
+<!-- END: BackNavigation -->
+<!-- BEGIN: HeroSection -->
+<main class="flex-grow">
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+<div class="hero-bg rounded-3xl overflow-hidden shadow-xl text-white relative">
+<div class="grid grid-cols-1 lg:grid-cols-12 min-h-[420px] items-stretch">
+<!-- Hero Text & Lightbulb Icon Content -->
+<div class="lg:col-span-7 p-8 sm:p-12 lg:p-14 flex flex-col justify-center z-10">
+<!-- Bulb Icon and Title Header -->
+<div class="flex items-start sm:items-center gap-5 sm:gap-6 mb-5">
+<div class="w-16 h-16 sm:w-20 sm:h-20 shrink-0 border-2 border-white/80 rounded-full flex items-center justify-center p-3 bg-white/5 backdrop-blur-sm shadow-inner" data-purpose="hero-spark-icon">
+<!-- Lightbulb Line Icon -->
+<svg class="w-full h-full text-white" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white drop-shadow-sm">
+                WTech Spark
+              </h1>
+</div>
+<!-- Subheading -->
+<h2 class="text-lg sm:text-xl font-bold text-white/95 mb-4 leading-snug max-w-xl">
+              Inspiración y referentes femeninos en STEAM.
+            </h2>
+<!-- Paragraph -->
+<p class="text-sm sm:text-base text-white/85 leading-relaxed font-normal max-w-lg">
+              Esta ruta busca visibilizar historias de mujeres que han abierto camino en áreas STEAM, generando inspiración y confianza para tu propio desarrollo.
+            </p>
+</div>
+<!-- Hero Image Container -->
+<div class="lg:col-span-5 relative flex items-end justify-center lg:justify-end overflow-hidden">
+<!-- Organic decorative shape behind image -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent lg:hidden z-10 pointer-events-none"></div>
+<img alt="Estudiante WTech Spark con mochila sonriendo" class="w-full h-full object-cover object-top lg:object-[center_20%] max-h-[460px] lg:max-h-full hero-curve" data-purpose="hero-student-photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2UVJdDMr2RT7_z3JXAMnV0xpKEUbHSbyKE619YrutplBGqMjU4Kryc2bWJD-_ADx0l7YRXj69BdjU2vIqArv-Gf-BZ0kKTglJ5M3hFCf6NyBNDWTlfdTi4_UGVAkITlUOEF92Ukk4P78QgqKZldDHblrVBLcSU8Ihkn2YYA1qMt2I7ZkuuI9gp94L0KRnC5N0bYMRzA9v6PPPMxe9yoqGbTSfRwXRiPrlACeovRfQJ3bd9oTJ3xq-fp5X4xb5L4ZUsPM"/>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: DetailedInformationSection -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4 mb-16" data-purpose="course-content-details">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-20 relative">
+<!-- Column 1: ¿Qué encontrarás? -->
+<div class="space-y-6">
+<h2 class="text-2xl sm:text-3xl font-extrabold text-[#111638] tracking-tight">
+            ¿Qué encontrarás?
+          </h2>
+<ul class="space-y-6 pt-3" data-purpose="features-list">
+<!-- Item 1: Charlas con referentes -->
+<li class="flex items-center gap-4 group">
+<div class="w-14 h-14 rounded-full bg-[#eeeaff] flex items-center justify-center shrink-0 shadow-sm border border-[#e1dcfa] text-[#4828b8]">
+<!-- Two women / mentors conversation icon -->
+<svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span class="text-base sm:text-lg font-medium text-[#242b50] leading-snug">
+                Charlas con referentes<br class="hidden sm:inline"/> en STEAM.
+              </span>
+</li>
+<!-- Item 2: Historias de impacto y trayectoria -->
+<li class="flex items-center gap-4 group">
+<div class="w-14 h-14 rounded-full bg-[#eeeaff] flex items-center justify-center shrink-0 shadow-sm border border-[#e1dcfa] text-[#4828b8]">
+<!-- Open book / story icon -->
+<svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span class="text-base sm:text-lg font-medium text-[#242b50] leading-snug">
+                Historias de impacto<br class="hidden sm:inline"/> y trayectoria.
+              </span>
+</li>
+<!-- Item 3: Espacios de inspiración y reflexión -->
+<li class="flex items-center gap-4 group">
+<div class="w-14 h-14 rounded-full bg-[#eeeaff] flex items-center justify-center shrink-0 shadow-sm border border-[#e1dcfa] text-[#4828b8]">
+<!-- Lightbulb / Inspiration icon -->
+<svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span class="text-base sm:text-lg font-medium text-[#242b50] leading-snug">
+                Espacios de inspiración<br class="hidden sm:inline"/> y reflexión.
+              </span>
+</li>
+<!-- Item 4: Conexión con la comunidad WomenTech -->
+<li class="flex items-center gap-4 group">
+<div class="w-14 h-14 rounded-full bg-[#eeeaff] flex items-center justify-center shrink-0 shadow-sm border border-[#e1dcfa] text-[#4828b8]">
+<!-- Community network rosette icon -->
+<svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span class="text-base sm:text-lg font-medium text-[#242b50] leading-snug">
+                Conexión con la comunidad<br class="hidden sm:inline"/> WomenTech.
+              </span>
+</li>
+</ul>
+</div>
+<!-- Vertical Divider (visible on desktop) -->
+<div class="hidden md:block absolute left-1/2 top-4 bottom-4 w-px bg-slate-200"></div>
+<!-- Column 2: Resultados esperados & CTA -->
+<div class="space-y-6 flex flex-col justify-between">
+<div>
+<h2 class="text-2xl sm:text-3xl font-extrabold text-[#111638] tracking-tight">
+              Resultados esperados
+            </h2>
+<ul class="space-y-6 pt-3" data-purpose="outcomes-list">
+<!-- Outcome 1 -->
+<li class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-[#efeaff] border border-[#d8d0fb] flex items-center justify-center shrink-0 text-[#5a39cb]">
+<svg class="w-6 h-6 stroke-[2.4]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span class="text-base sm:text-lg font-medium text-[#242b50] leading-snug">
+                  Ampliar tu visión sobre las oportunidades en STEAM.
+                </span>
+</li>
+<!-- Outcome 2 -->
+<li class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-[#efeaff] border border-[#d8d0fb] flex items-center justify-center shrink-0 text-[#5a39cb]">
+<svg class="w-6 h-6 stroke-[2.4]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span class="text-base sm:text-lg font-medium text-[#242b50] leading-snug">
+                  Conocer referentes femeninos en tu área de interés.
+                </span>
+</li>
+<!-- Outcome 3 -->
+<li class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-[#efeaff] border border-[#d8d0fb] flex items-center justify-center shrink-0 text-[#5a39cb]">
+<svg class="w-6 h-6 stroke-[2.4]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span class="text-base sm:text-lg font-medium text-[#242b50] leading-snug">
+                  Fortalecer tu motivación y confianza.
+                </span>
+</li>
+<!-- Outcome 4 -->
+<li class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-[#efeaff] border border-[#d8d0fb] flex items-center justify-center shrink-0 text-[#5a39cb]">
+<svg class="w-6 h-6 stroke-[2.4]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<span class="text-base sm:text-lg font-medium text-[#242b50] leading-snug">
+                  Iniciar tu conexión con la comunidad.
+                </span>
+</li>
+</ul>
+</div>
+<!-- Bottom CTA Button -->
+<div class="pt-6 sm:pt-4" id="inscribirme">
+<a class="inline-flex items-center justify-center gap-3 bg-[#f72585] hover:bg-[#e01673] text-white text-base sm:text-lg font-bold px-8 sm:px-10 py-3.5 rounded-full shadow-lg shadow-pink-500/25 transition-all duration-200 transform hover:-translate-y-0.5" data-purpose="enrollment-cta-button" href="#">
+<span>Quiero inscribirme</span>
+<svg class="w-5 h-5 stroke-[2.5]" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- END: DetailedInformationSection -->
+</main>
+<!-- BEGIN: InstitutionalFooter -->
+<footer class="bg-[#050b28] text-white py-8 border-t border-white/10 mt-auto" data-purpose="institutional-footer">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+<!-- Institutional Badges & Logos Container -->
+<div class="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-6" data-purpose="accreditation-badges">
+<!-- Universidad Católica de Colombia Logo Emulation -->
+<div class="flex items-center gap-2.5">
+<!-- Crest / Shield -->
+<div class="w-9 h-11 border-2 border-[#e6a817] rounded-b-md bg-[#002f6c] p-1 flex flex-col items-center justify-center shadow">
+<div class="w-4 h-3 bg-white mb-0.5 rounded-xs"></div>
+<div class="w-4 h-3 bg-[#e6a817] rounded-xs"></div>
+</div>
+<div class="text-left leading-tight">
+<div class="text-[12px] font-bold tracking-tight text-white">UNIVERSIDAD CATÓLICA</div>
+<div class="text-[10px] text-gray-300 font-medium">de Colombia</div>
+<div class="text-[7.5px] text-gray-400">Vigilada Mineducación</div>
+</div>
+</div>
+<div class="hidden sm:block h-8 w-px bg-white/20"></div>
+<!-- Acreditación Institucional Alta Calidad -->
+<div class="flex items-center gap-2">
+<div class="text-xl font-bold text-white border-2 border-white rounded-full w-7 h-7 flex items-center justify-center">✓</div>
+<div class="text-[9px] uppercase font-bold leading-tight tracking-wider text-left">
+<div>Acreditación</div>
+<div>Institucional</div>
+<div class="text-[8px] font-medium text-gray-300">ALTA CALIDAD</div>
+</div>
+</div>
+<div class="hidden sm:block h-8 w-px bg-white/20"></div>
+<!-- QS World University Rankings Badge -->
+<div class="flex items-center bg-[#f59e0b] text-[#111] px-2 py-1 rounded text-[10px] font-black uppercase tracking-tight">
+<span class="text-base mr-1 font-extrabold">QS</span>
+<div class="leading-none text-[8px] text-white font-bold">
+<div>WORLD</div>
+<div>UNIVERSITY</div>
+<div class="text-[7px]">RANKINGS</div>
+</div>
+</div>
+<div class="hidden sm:block h-8 w-px bg-white/20"></div>
+<!-- ICONTEC ISO 21001 -->
+<div class="border border-white/40 rounded px-1.5 py-0.5 text-center flex flex-col items-center">
+<span class="text-[7px] font-bold tracking-tighter text-blue-300">icontec</span>
+<span class="text-[6.5px] text-gray-200">ISO 21001</span>
+</div>
+</div>
+<!-- Social Media & Official Domain -->
+<div class="flex items-center gap-6" data-purpose="social-and-domain">
+<!-- Social Icons -->
+<div class="flex items-center space-x-4 text-white text-lg">
+<!-- Instagram -->
+<a aria-label="Instagram" class="hover:text-[#f72585] transition-colors" href="#">
+<svg class="w-5 h-5 fill-currentColor" viewbox="0 0 24 24">
+<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+</svg>
+</a>
+<!-- LinkedIn -->
+<a aria-label="LinkedIn" class="hover:text-[#f72585] transition-colors" href="#">
+<svg class="w-5 h-5 fill-currentColor" viewbox="0 0 24 24">
+<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+</svg>
+</a>
+<!-- YouTube -->
+<a aria-label="YouTube" class="hover:text-[#f72585] transition-colors" href="#">
+<svg class="w-5 h-5 fill-currentColor" viewbox="0 0 24 24">
+<path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+</svg>
+</a>
+</div>
+<span class="text-white/30 hidden sm:inline">|</span>
+<!-- Web link -->
+<a class="text-sm font-medium tracking-wide text-gray-200 hover:text-white transition-colors" href="https://www.ucatolica.edu.co" rel="noopener noreferrer" target="_blank">
+          www.ucatolica.edu.co
+        </a>
+</div>
+</div>
+</footer>
+<!-- END: InstitutionalFooter -->
+</body></html>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>WomenTech UCatólica - Mujeres que crean el futuro en STEAM</title>
+<!-- Tailwind CSS CDN with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Inter / Outfit -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            wtech: {
+              navy: '#090e23',
+              darkHero: '#070b1e',
+              fuchsia: '#ec1d6c',
+              fuchsiaHover: '#d4135e',
+              purple: '#5e2590',
+              deepPurple: '#491b7e',
+              blueSpark: '#054db0',
+              indigoTalent: '#3634a3',
+              plumConnect: '#742375',
+              crimsonLabs: '#c72459',
+              coralCore: '#ea2f6e',
+              violetLead: '#6033b0',
+              badgeBg: '#f2ebf9',
+            }
+          }
+        }
+      }
+    }
+  </script>
+<!-- Custom CSS for specific decorative elements -->
+<style data-purpose="custom-decorations">
+    .hero-glow {
+      background: radial-gradient(circle at 75% 45%, rgba(216, 27, 107, 0.45) 0%, rgba(94, 37, 144, 0.25) 35%, rgba(7, 11, 30, 0) 70%);
+    }
+    .cta-gradient {
+      background: linear-gradient(90deg, #ec1d6c 0%, #d81b6b 20%, #7e22ce 60%, #1e1b4b 100%);
+    }
+    .hand-drawn-font {
+      font-family: 'Plus Jakarta Sans', cursive, sans-serif;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-slate-800 bg-white selection:bg-pink-500 selection:text-white">
+<!-- BEGIN: MainHeader -->
+<header class="sticky top-0 z-50 bg-[#070b1e]/95 backdrop-blur border-b border-white/10" data-purpose="site-navigation-header">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<!-- Brand Logo -->
+<a aria-label="WomenTech UCatólica Home" class="flex flex-col tracking-tight group" href="#">
+<div class="flex items-center space-x-1.5 leading-none">
+<span class="text-white font-black text-xl tracking-wider">WOMEN</span>
+<span class="text-wtech-fuchsia font-black text-xl tracking-wider">TECH</span>
+</div>
+<span class="text-[10px] text-sky-300 font-semibold tracking-widest pl-0.5 mt-0.5">UCATÓLICA</span>
+</a>
+<!-- Desktop Navigation Links -->
+<nav class="hidden md:flex items-center space-x-8 text-sm font-medium" data-purpose="primary-menu">
+<a class="text-white relative py-2 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-wtech-fuchsia" href="#inicio">Inicio</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="#quienes-somos">Quiénes somos</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="#rutas">Rutas de formación</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="#actividades">Actividades</a>
+<a class="text-slate-300 hover:text-white transition-colors" href="#aliados">Aliados</a>
+</nav>
+<!-- Primary Registration Button -->
+<div>
+<a class="inline-flex items-center justify-center px-6 py-2.5 rounded-full text-sm font-bold text-white bg-wtech-fuchsia hover:bg-wtech-fuchsiaHover transition-all shadow-md hover:shadow-pink-500/25" href="#inscripcion">
+          Inscríbete
+        </a>
+</div>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<section class="relative bg-[#070b1e] text-white pt-10 pb-20 overflow-hidden" data-purpose="hero-banner" id="inicio">
+<!-- Ambient Background Radial Glow -->
+<div aria-hidden="true" class="absolute inset-0 hero-glow pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+<!-- Left Column: Copy & Actions -->
+<div class="lg:col-span-6 space-y-6">
+<span class="inline-block text-xs uppercase tracking-widest text-slate-300 font-bold bg-white/10 px-3 py-1 rounded-full border border-white/15">
+          Comunidad · Formación · Oportunidades
+        </span>
+<h1 class="text-4xl sm:text-5xl lg:text-[56px] font-extrabold leading-[1.08] tracking-tight">
+          Mujeres que<br/>crean <span class="text-wtech-fuchsia">el futuro</span><br/>en STEAM
+        </h1>
+<p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-xl font-normal">
+          WomenTech UCatólica es una iniciativa institucional que impulsa el liderazgo, el crecimiento personal y profesional de mujeres estudiantes y egresadas en Ciencia, Tecnología, Ingeniería, Artes y Matemáticas.
+        </p>
+<!-- CTA Buttons -->
+<div class="pt-2 flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full text-sm font-bold text-white bg-wtech-fuchsia hover:bg-wtech-fuchsiaHover transition-all shadow-lg hover:shadow-pink-600/30" href="#rutas">
+<span>Conoce nuestra rutas</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+<a class="inline-flex items-center justify-center px-7 py-3.5 rounded-full text-sm font-semibold text-white border border-white/60 hover:bg-white/10 transition-colors" href="#inscripcion">
+            Inscríbete ahora
+          </a>
+</div>
+</div>
+<!-- Right Column: Photographic Collage with floating badges -->
+<div class="lg:col-span-6 relative flex justify-center lg:justify-end">
+<!-- Main Collage Container -->
+<div class="relative w-full max-w-[500px]">
+<!-- Floating Motivational Callouts -->
+<!-- Callout: Aprende -->
+<div class="absolute -top-3 left-4 text-pink-300 hand-drawn-font text-base sm:text-lg select-none flex flex-col items-center rotate-[-8deg] z-20">
+<span>Aprende</span>
+<div class="flex gap-1 -mt-1 text-pink-400">
+<span class="text-xs">/</span><span class="text-xs">|</span><span class="text-xs">\</span>
+</div>
+</div>
+<!-- Callout: Conecta -->
+<div class="absolute -top-4 left-36 text-pink-200 hand-drawn-font text-base sm:text-lg select-none flex flex-col items-center rotate-[4deg] z-20">
+<span>Conecta</span>
+<div class="flex gap-1 -mt-1 text-pink-400">
+<span class="text-xs">\</span><span class="text-xs">|</span><span class="text-xs">/</span>
+</div>
+</div>
+<!-- Callout: Lidera -->
+<div class="absolute top-2 right-12 text-pink-300 hand-drawn-font text-base sm:text-lg select-none flex flex-col items-center rotate-[6deg] z-20">
+<div class="flex gap-1 text-pink-400 mb-[-2px]">
+<span class="text-xs">\</span><span class="text-xs">|</span><span class="text-xs">/</span>
+</div>
+<span>Lidera</span>
+</div>
+<!-- Callout: Crece -->
+<div class="absolute top-16 -right-2 text-pink-200 hand-drawn-font text-base sm:text-lg select-none flex flex-col items-center rotate-[10deg] z-20">
+<span>Crece</span>
+<div class="flex gap-1 text-pink-400 text-xs mt-0.5">
+<span>\</span><span>/</span>
+</div>
+</div>
+<!-- Composite Image Container -->
+<div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-gradient-to-tr from-purple-900/40 to-pink-900/30">
+<img alt="Grupo de estudiantes y profesionales de WomenTech UCatólica colaborando juntas frente a un computador" class="w-full h-[430px] object-cover object-center mix-blend-lighten" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzckmNneVKFCvWgE8QdAAkqI3T23AjiB8uLX9Qwe22U_il8d5FSQZdauXOxcYaFNhOrNTyf5DMXIeVqn2eb7pX9aUuO3o66I5onnjCMEypRA9gW6xajZGx1Q-MTibcMg73qy9cHhg6Zs3NP7tyUiwc4jFhhkUBp6U-5DuSkKMPbv4YdV_wE0kmfBWsxDN31XgoUMP0HrDUdKHnKpkAXfKav35U9vAnTLIjyGi2BAK0kHfGndABai3DYQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#070b1e] via-transparent to-transparent opacity-80"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: AboutSection -->
+<section class="py-24 bg-white" data-purpose="about-program" id="quienes-somos">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Text details -->
+<div class="lg:col-span-6 space-y-6">
+<span class="text-xs font-bold tracking-widest text-wtech-fuchsia uppercase block">
+          Sobre el programa
+        </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          ¿Qué es<br/>WomenTech UCatólica?
+        </h2>
+<p class="text-slate-600 text-base leading-relaxed">
+          Es una comunidad activa dentro de la Universidad Católica de Colombia que genera espacios formativos y colaborativos para fortalecer las trayectorias académicas y laborales de mujeres en áreas STEAM, mediante actividades, mentoría, desarrollo de habilidades y conexión con oportunidades profesionales.
+        </p>
+<div class="pt-2">
+<a class="inline-flex items-center px-6 py-3 rounded-full text-sm font-bold text-white bg-wtech-fuchsia hover:bg-wtech-fuchsiaHover transition-colors shadow-md" href="#contacto">
+            Conoce más sobre nosotras
+          </a>
+</div>
+</div>
+<!-- About Media Card -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-3xl overflow-hidden shadow-xl max-w-lg mx-auto">
+<!-- Main portrait image -->
+<img alt="Líder y estudiante de ingeniería en WomenTech" class="w-full h-[400px] object-cover object-top" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxgI0jjSVQ5I0J9i8OznktdxRuO3qkTZqOnOIIha52jH7f0Un5uEg1zY_YVY8yPpoHWZ1Fq--HzOS4HeTP9_5Us_bNzSi-BVEank8QVPudEmrsEN6PcYdXkzTt9RQ1h0ZA0N-jJkOb3JLjXnzJ6qakR9sdQgVD9sgavWvEXewp9R0c-RCqYfQg0mcR20c0XwECSM2t5Woj7PKNxSnjHiUvuRgkQClfkmVA4wpK_0dYgW4r34KIqPFsjQ"/>
+<!-- Overlaid Purple Card -->
+<div class="absolute bottom-6 right-6 left-28 sm:left-40 bg-[#491b7e] text-white p-6 rounded-2xl shadow-xl flex items-center space-x-4">
+<div class="shrink-0 text-white">
+<!-- Community Icon -->
+<svg class="w-10 h-10" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<p class="text-sm font-medium leading-snug">
+              Una comunidad de mujeres que inspiran, aprenden y construyen juntas.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: AboutSection -->
+<!-- BEGIN: LearningPathsSection -->
+<section class="py-24 bg-slate-50/70 border-t border-slate-100" data-purpose="training-paths" id="rutas">
+<div class="max-w-7xl mx-auto px-6">
+<!-- Section Title Header -->
+<div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+<span class="text-xs font-bold tracking-widest text-wtech-fuchsia uppercase block">
+          Nuestras Rutas
+        </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Seis caminos, un mismo propósito
+        </h2>
+<p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+          Cada ruta aborda un componente clave del desarrollo integral, combinando talleres, encuentros, proyectos, actividades prácticas y conexión con redes de apoyo.
+        </p>
+</div>
+<!-- 6 Routes Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+<!-- Card 1: WTech Spark -->
+<div class="bg-[#0b4ca8] rounded-2xl p-6 text-white flex flex-col justify-between shadow-md hover:-translate-y-1 transition-transform min-h-[300px]">
+<div>
+<div class="mb-6">
+<!-- Lightbulb Icon -->
+<svg class="w-9 h-9" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="font-bold text-lg leading-tight mb-2">WTech<br/>Spark</h3>
+<p class="text-xs text-blue-100 font-normal leading-relaxed">
+              Inspiración y referentes femeninos en STEAM.
+            </p>
+</div>
+<div class="pt-6">
+<span class="w-8 h-8 rounded-full border border-white/60 flex items-center justify-center hover:bg-white hover:text-blue-900 transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</span>
+</div>
+</div>
+<!-- Card 2: WTech Talents -->
+<div class="bg-[#282787] rounded-2xl p-6 text-white flex flex-col justify-between shadow-md hover:-translate-y-1 transition-transform min-h-[300px]">
+<div>
+<div class="mb-6">
+<!-- Brain Icon -->
+<svg class="w-9 h-9" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="font-bold text-lg leading-tight mb-2">WTech<br/>Talents</h3>
+<p class="text-xs text-indigo-100 font-normal leading-relaxed">
+              Desarrollo de habilidades técnicas y socioemocionales.
+            </p>
+</div>
+<div class="pt-6">
+<span class="w-8 h-8 rounded-full border border-white/60 flex items-center justify-center hover:bg-white hover:text-indigo-900 transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</span>
+</div>
+</div>
+<!-- Card 3: WTech Connect -->
+<div class="bg-[#6b1e6e] rounded-2xl p-6 text-white flex flex-col justify-between shadow-md hover:-translate-y-1 transition-transform min-h-[300px]">
+<div>
+<div class="mb-6">
+<!-- Group Network Icon -->
+<svg class="w-9 h-9" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="font-bold text-lg leading-tight mb-2">WTech<br/>Connect</h3>
+<p class="text-xs text-pink-100 font-normal leading-relaxed">
+              Networking, mentorías y conexiones profesionales.
+            </p>
+</div>
+<div class="pt-6">
+<span class="w-8 h-8 rounded-full border border-white/60 flex items-center justify-center hover:bg-white hover:text-purple-900 transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</span>
+</div>
+</div>
+<!-- Card 4: WTech Labs -->
+<div class="bg-[#be185d] rounded-2xl p-6 text-white flex flex-col justify-between shadow-md hover:-translate-y-1 transition-transform min-h-[300px]">
+<div>
+<div class="mb-6">
+<!-- Flask/Lab Icon -->
+<svg class="w-9 h-9" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="font-bold text-lg leading-tight mb-2">WTech<br/>Labs</h3>
+<p class="text-xs text-rose-100 font-normal leading-relaxed">
+              Innovación, investigación y desarrollo de proyectos.
+            </p>
+</div>
+<div class="pt-6">
+<span class="w-8 h-8 rounded-full border border-white/60 flex items-center justify-center hover:bg-white hover:text-rose-900 transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</span>
+</div>
+</div>
+<!-- Card 5: WTech Core -->
+<div class="bg-[#e11d62] rounded-2xl p-6 text-white flex flex-col justify-between shadow-md hover:-translate-y-1 transition-transform min-h-[300px]">
+<div>
+<div class="mb-6">
+<!-- Briefcase Icon -->
+<svg class="w-9 h-9" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="font-bold text-lg leading-tight mb-2">WTech<br/>Core</h3>
+<p class="text-xs text-pink-100 font-normal leading-relaxed">
+              Empleabilidad, portafolio profesional y preparación profesional.
+            </p>
+</div>
+<div class="pt-6">
+<span class="w-8 h-8 rounded-full border border-white/60 flex items-center justify-center hover:bg-white hover:text-pink-900 transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</span>
+</div>
+</div>
+<!-- Card 6: WTech Lead -->
+<div class="bg-[#582ba6] rounded-2xl p-6 text-white flex flex-col justify-between shadow-md hover:-translate-y-1 transition-transform min-h-[300px]">
+<div>
+<div class="mb-6">
+<!-- Trophy Icon -->
+<svg class="w-9 h-9" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24">
+<path d="M12 8v13m0-13V4m0 4h5.2a2 2 0 011.96 2.392l-.7 3.5A2 2 0 0116.5 12H12m0-4H6.8a2 2 0 00-1.96 2.392l.7 3.5A2 2 0 007.5 12H12m-4 9h8" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<h3 class="font-bold text-lg leading-tight mb-2">WTech<br/>Lead</h3>
+<p class="text-xs text-violet-100 font-normal leading-relaxed">
+              Formación en liderazgo y continuidad de la comunidad.
+            </p>
+</div>
+<div class="pt-6">
+<span class="w-8 h-8 rounded-full border border-white/60 flex items-center justify-center hover:bg-white hover:text-purple-900 transition-colors">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: LearningPathsSection -->
+<!-- BEGIN: ImpactObjectivesSection -->
+<section class="py-24 bg-white" data-purpose="impact-goals">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Column: Women hands joined / Teamwork photograph -->
+<div class="lg:col-span-5">
+<div class="rounded-3xl overflow-hidden shadow-lg border border-slate-100">
+<img alt="Equipo de mujeres celebrando unidas en un círculo de apoyo" class="w-full h-[420px] object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA018HWZU1hIZi6_P8_JvQC_GoJ2-wnH6kvQCyBJRCbAdr03GfWMhtieQoWStNf5191O3LzIYsAIgt8egM3W17o9yvH0y9Sh6wwJV6QGVN6J5zTrtyx7gtx5r2g3CTPqTEHZSVLYlLgxb9-MTyOueV2LXTxhSgAppD-FdCLEkGkK7pxcTvS_sIfUvhokKDcyfbseD6iOEf4vQImk405ELhTxqLaiC0IHYCwXo5U68tqyLxbrDyXbGOSqQ"/>
+</div>
+</div>
+<!-- Right Column: Goals Grid -->
+<div class="lg:col-span-7 space-y-8">
+<div>
+<span class="text-xs font-bold tracking-widest text-wtech-fuchsia uppercase block mb-1">
+            Nuestro Impacto
+          </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+            Objetivos del programa
+          </h2>
+</div>
+<!-- 4 Target Badges (2x2 Grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<!-- Objective 1 -->
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 rounded-2xl bg-[#efe8fa] text-[#582ba6] flex items-center justify-center shrink-0">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-800 leading-snug">
+                Formar al menos 12 de líderes estudiantiles en 2026.
+              </p>
+</div>
+</div>
+<!-- Objective 2 -->
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 rounded-2xl bg-[#efe8fa] text-[#582ba6] flex items-center justify-center shrink-0">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-800 leading-snug">
+                Desarrollar habilidades en al menos 30 participantes en un año.
+              </p>
+</div>
+</div>
+<!-- Objective 3 -->
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 rounded-2xl bg-[#efe8fa] text-[#582ba6] flex items-center justify-center shrink-0">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-800 leading-snug">
+                Conectar a mínimo 90 estudiantes y egresadas con oportunidades profesionales.
+              </p>
+</div>
+</div>
+<!-- Objective 4 -->
+<div class="flex items-start space-x-4">
+<div class="w-12 h-12 rounded-2xl bg-[#efe8fa] text-[#582ba6] flex items-center justify-center shrink-0">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</div>
+<div>
+<p class="text-sm font-semibold text-slate-800 leading-snug">
+                Posicionar a la Universidad Católica como referente en liderazgo femenino en STEAM.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: ImpactObjectivesSection -->
+<!-- BEGIN: CommunityCTABanner -->
+<section class="cta-gradient text-white py-8" data-purpose="bottom-cta-banner" id="inscripcion">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+<!-- Call to action message -->
+<div class="space-y-1 text-center md:text-left">
+<h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight">
+          Sé parte de esta comunidad
+        </h3>
+<p class="text-sm text-pink-100 font-medium">
+          Impulsa tu talento, conecta con otras mujeres y construye nuevas oportunidades.
+        </p>
+</div>
+<!-- Action Button -->
+<div>
+<a class="inline-flex items-center gap-2 px-8 py-3.5 rounded-full text-sm font-bold text-wtech-fuchsia bg-white hover:bg-slate-100 transition-all shadow-lg hover:shadow-xl shrink-0" href="#registro">
+<span>Quiero inscribirme</span>
+<svg class="w-4 h-4 text-wtech-fuchsia" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+</a>
+</div>
+</div>
+</section>
+<!-- END: CommunityCTABanner -->
+<!-- BEGIN: InstitutionalFooter -->
+<footer class="bg-[#050814] text-white py-12 border-t border-white/5" data-purpose="institutional-footer" id="aliados">
+<div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-8">
+<!-- Institutional Badges & Accreditations -->
+<div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 sm:gap-8">
+<!-- Universidad Católica Logo Mockup -->
+<div class="flex items-center space-x-3">
+<div class="w-10 h-11 bg-yellow-500 rounded-sm flex items-center justify-center p-1 text-slate-900 font-black text-xs text-center border-t-4 border-blue-900 shadow">
+<span>U Cat</span>
+</div>
+<div class="text-left leading-tight">
+<span class="block text-xs font-black tracking-wider uppercase text-white">Universidad Católica</span>
+<span class="block text-[11px] text-slate-400 font-medium">de Colombia</span>
+<span class="block text-[8px] text-slate-500 uppercase tracking-tight">Vigilada Mineducación</span>
+</div>
+</div>
+<div class="h-8 w-px bg-white/20 hidden sm:block"></div>
+<!-- Acreditación Alta Calidad -->
+<div class="flex items-center space-x-2">
+<div class="w-7 h-7 rounded border border-white flex items-center justify-center">
+<svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>
+</div>
+<div class="text-[10px] leading-tight font-bold tracking-tight">
+<span>Acreditación</span><br/>
+<span class="text-slate-300">ALTA CALIDAD</span>
+</div>
+</div>
+<div class="h-8 w-px bg-white/20 hidden sm:block"></div>
+<!-- QS World University Rankings -->
+<div class="bg-amber-500 text-slate-900 px-3 py-1.5 rounded flex items-center space-x-2 font-bold text-xs">
+<span class="text-sm font-black tracking-tight">QS</span>
+<div class="text-[9px] leading-tight uppercase font-extrabold text-slate-900 border-l border-slate-900/40 pl-1.5">
+            World<br/>University<br/>Rankings
+          </div>
+</div>
+<div class="h-8 w-px bg-white/20 hidden sm:block"></div>
+<!-- Icontec ISO 21001 -->
+<div class="flex flex-col items-center bg-cyan-700/80 px-2.5 py-1 rounded border border-cyan-400/30 text-[9px]">
+<span class="font-extrabold text-white">icontec</span>
+<span class="font-bold text-[8px] text-cyan-200">ISO 21001</span>
+</div>
+</div>
+<!-- Social Networks & Official Domain -->
+<div class="flex flex-col sm:flex-row items-center gap-6 text-sm">
+<!-- Social Icons -->
+<div class="flex items-center space-x-4 text-slate-300">
+<!-- Instagram -->
+<a aria-label="Instagram" class="hover:text-wtech-fuchsia transition-colors" href="#">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+<rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
+<path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"></path>
+</svg>
+</a>
+<!-- LinkedIn -->
+<a aria-label="LinkedIn" class="hover:text-wtech-fuchsia transition-colors" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+</svg>
+</a>
+<!-- YouTube -->
+<a aria-label="YouTube" class="hover:text-wtech-fuchsia transition-colors" href="#">
+<svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+<path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path>
+</svg>
+</a>
+</div>
+<div class="h-4 w-px bg-white/20 hidden sm:block"></div>
+<!-- Official Web URL -->
+<a class="text-slate-300 hover:text-white font-medium tracking-wide" href="https://www.ucatolica.edu.co" rel="noopener noreferrer" target="_blank">
+          www.ucatolica.edu.co
+        </a>
+</div>
+</div>
+</footer>
+<!-- END: InstitutionalFooter -->
+</body></html>
