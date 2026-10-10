@@ -1,1 +1,83 @@
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #22246e;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #22246e;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav h2 {
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 70px 10%;
+}
+
+.hero {
+    background: linear-gradient(120deg, #22246e, #a91e81);
+    color: white;
+    text-align: center;
+    padding: 110px 10%;
+}
+
+.hero h1 {
+    font-size: clamp(28px, 5vw, 48px);
+}
+
+.boton {
+    display: inline-block;
+    background: #f52d73;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.rutas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.rutas article {
+    padding: 35px 20px;
+    background: #f5effa;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background: #22246e;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
